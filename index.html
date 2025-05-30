@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Puzzle Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🧩 Image Puzzle Game</h1>
+
+  <div id="controls">
+    <label>Difficulty:
+      <select id="difficultySelect">
+        <option value="">-- Select --</option>
+        <option value="3">3 x 3</option>
+        <option value="4">4 x 4</option>
+        <option value="5">5 x 5</option>
+      </select>
+    </label>
+
+    <label>Choose Image:
+      <input type="file" id="imageInput" accept="image/*" disabled />
+    </label>
+
+    <span>Moves: <span id="moveCounter">0</span></span>
+  </div>
+
+  <div id="puzzleContainer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
